@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link rel="stylesheet" href="static/css/style.css">
+        <!-- thank you  to http://remix.kwed.org sound trak -->    
+    </head>
+    <body>
+
+        <audio preload="true" id="backs3" >
+            <source src="static/audio/playa.ogg" />
+        </audio>
+        <audio preload="true" id="rio" >
+            <source src="static/audio/rio.ogg" />
+        </audio>
+        <audio preload="true" id="collide" >
+            <source src="static/audio/im2.ogg" />   
+        </audio>  
+        <audio preload="true" id="backsound" >
+            <source src="static/audio/m6.ogg" />   
+        </audio>
+        <audio preload="true" id="sirena" >
+            <source src="static/audio/sirena.ogg" />   
+        </audio>
+        <audio preload="true" id="mpause" >
+            <source src="static/audio/m3.ogg" />   
+        </audio>
+        <audio preload="true" id="mpausevoz" >
+            <source src="static/audio/m22.ogg" />   
+        </audio>
+        <audio preload="true" id="mp" >
+            <source src="static/audio/mp.ogg" />   
+        </audio>        
+
+        <audio preload="true" id="backs3" >
+            <source src="static/audio/playa.ogg" />
+        </audio>
+        <audio preload="true" id="rio" >
+            <source src="static/audio/rio.ogg" />
+        </audio>
+        <audio preload="true" id="collide" >
+            <source src="static/audio/im2.ogg" />   
+        </audio>  
+        <audio preload="true" id="backsound" >
+            <source src="static/audio/m6.ogg" />   
+        </audio>
+        <audio preload="true" id="sirena" >
+            <source src="static/audio/sirena.ogg" />   
+        </audio>
+        <audio preload="true" id="mpause" >
+            <source src="static/audio/m3.ogg" />   
+        </audio>
+        <audio preload="true" id="mpausevoz" >
+            <source src="static/audio/m22.ogg" />   
+        </audio>
+        <audio preload="true" id="mp" >
+            <source src="static/audio/mp.ogg" />   
+        </audio>
+        <audio preload="true" id="out" >
+            <source src="static/audio/out.ogg" />   
+        </audio>
+        <audio preload="true" id="next" >
+            <source src="static/audio/next1.ogg" />   
+        </audio>
+
+        <div style="position: fixed; z-index: 2; left: 0%; width: 320px; height: 480px;">
+            <canvas   id="micanvas">Su navegador no soporta en elemento CANVAS</canvas>
+            <div id="objArrastrableStartbtn">Start</div>
+            <div id="objArrastrableRStartbtn"> <span id="pausa"><p>Pause</p></span> </div>
+        </div> 
+        <div id="arbolpajaro1"></div>
+        <div id="pajaro2"></div>
+        <div id="pajaro3"></div>
+        <div id="pajaro4"> <label id="lbmsg"></label></div>
+        <div id="pajaro5"></div>
+        <div id="pajaro6"></div>
+        <div id="pajaro7"></div>
+        <div id="mensaje"></div>
+        <div id="mensaje2"></div>
+        <div id="pajaro9"></div>
+        <div id="pajaro13"></div>
+        <div id="pajaro14"></div>        
+        <div id="menu"  style="display:block;">
+            <div id="btnplay2"  style="position:absolute;top:300px ; left:115px;display:block;"> 
+                <label id="lbhit" class="btnl" /><br/>
+                <span id="lbescaped" class="btnl" />
+            </div>
+            <div id="btnplay1" > 
+                <!------>
+                <div  id="play" style="position:relative;top:0px ; left:0px;width:80px; height:70px;" >
+                    play
+                </div>
+                <div  id="p22" style="position:relative;top:0px ; left:40px;width:1px; height:70px;background:rgba(234, 240, 234, 0.40);" >
+                </div>
+            </div>
+            <div id="playerpajaro" ></div>
+            <div id="playerpajaro2" > </div>
+            <div id="btnplaynext" style="position:absolute;top:350px ; left:95px;display:none;"> 
+                <input type="button" id="playnext" class="btnl" value="next" style="width:80px; height:70px;" />
+            </div>
+            <br />
+        </div>
+        <div id="menut">
+            <div id="btnplay225"> 
+                <br>
+                <span id="lbescaped2" class="btnl"> balloons land </span>
+            </div>
+        </div>
+        <div id="globo"  >
+        </div>
+        <div id="menupaused"  style="display:block;">            
+            <div id="divbtnpaused" style="position:relative;"> 
+                <input type="button" id="btnpaused" class="btnl" value="pause" style="width:80px; height:70px;" />
+            </div>
+        </div>
+        <canvas  id="game" ></canvas>                
+        <div id="ad-frame"></div>        
+        <script type="text/javascript" src="static/js/jscompiled.js"></script>               
+
+        <script type="text/javascript" >
+            applicationCache.addEventListener('progress', function(e) {
+                document.getElementById("lbescaped2").innerText = e.loaded;
+            }, false);
+        </script>        
+    </body>
+</html>

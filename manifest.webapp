@@ -1,0 +1,44 @@
+{
+  "version": "1",
+  "name": "ballonland",   
+  "description": "intenta tocar los globos para destruirlos.",
+  "launch_path": "/index.html",
+  "icons": {
+    "22": "/static/icons/swallow-22.png",
+    "24": "/static/icons/swallow-24.png",
+    "32": "/static/icons/swallow-32.png",
+    "48": "/static/icons/swallow-48.png",        
+    "128": "/static/icons/swallow-128.png"    
+  },  
+  "type": "web",
+  "permissions": {    
+    "audio-channel-content":{
+		"description":"Use the audio channel for the music player"
+	},
+    "audio-channel-normal":{
+		"description":"Use the audio channel for the music player"
+	}    
+  },  
+  "orientation": "portrait-primary",
+  "fullscreen": "true",
+  "developer": {
+    "name": "Asiker",
+    "url": "http://spacefight.apphb.com/nav.aspx"
+  },
+  "installs_allowed_from": ["*"],  
+  "locales": {
+    "es": {
+      "description": "intenta tocar los globos para destruirlos.",
+      "developer": {
+        "url": "http://spacefight.apphb.com/nav.aspx"
+      }
+    },
+    "en": {
+      "description": "tries to touch the balloons to destroy.",
+      "developer": {
+        "url": "http://spacefight.apphb.com/nav.aspx"
+      }
+    }
+  },
+  "default_locale": "es"
+}
